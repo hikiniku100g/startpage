@@ -1,0 +1,95 @@
+<!-- ===== 2026/07/05 =====-->
+
+<!DOCTYPE html><html lang="ja"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>StartPage</title>
+<link rel="shortcut icon" href="favicon.png">
+<style>
+body{background:#111;color:#eee;font-family:sans-serif;margin:0;padding:14px}
+.search{display:flex;gap:8px;margin-bottom:10px}
+.search input{flex:1;padding:10px;border-radius:8px;border:1px solid #444;background:#1b1b1b;color:#fff}
+.search button{padding:10px 14px;border-radius:8px;border:none}
+h2{margin:18px 0 10px}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.tile{background:#1c1c1c;border-radius:10px;padding:10px 6px;text-align:center;text-decoration:none;color:#eee;min-height:72px}
+.tile img{width:24px;height:24px;display:block;margin:0 auto 6px}
+.label{font-size:12px;line-height:1.2}
+
+<!--📁を中央配置-->
+details.folder summary{
+  list-style:none;
+  cursor:pointer;
+  text-align:center;
+  font-size:18px;
+  font-weight:bold;
+}
+
+</style></head><body>
+<div class="search"><input id="g" placeholder="Google検索"><button onclick="window.open('https://www.google.com/search?q='+encodeURIComponent(g.value),'_blank')">検索</button></div>
+<div class="search"><input id="p" placeholder="Perplexity検索"><button onclick="window.open('https://www.perplexity.ai/search?q='+encodeURIComponent(p.value),'_blank')">検索</button></div>
+
+<div class='grid'>
+<a class='tile' target='_blank' href='https://gemini.google.com/app'><img src='https://www.google.com/s2/favicons?domain=gemini.google.com&sz=64'><div class='label'>Google Gemini</div></a>
+<a class='tile' target='_blank' href='https://www.google.com/maps/d/edit?mid=1Jh1h4dpdJubQhHZJRhVmviBJxQF-IQo&ll=35.66238610403097%2C139.66971279999999&z=12'><img src='https://www.google.com/s2/favicons?domain=https://maps.google.com&sz=64'><div class='label'>マイマップ</div></a>
+</div>
+<h2>競馬</h2><div class='grid'>
+<a class='tile' target='_blank' href='https://www2.keiba.go.jp/KeibaWeb/TodayRaceInfo/TodayRaceInfoTop'><img src='https://www.google.com/s2/favicons?domain=www2.keiba.go.jp&sz=64'><div class='label'>本日のレース情報｜地方競馬情報サイト</div></a>
+<a class='tile' target='_blank' href='https://keiba.rakuten.co.jp/?l-id=keiba_globalNavi_top'><img src='https://www.google.com/s2/favicons?domain=keiba.rakuten.co.jp&sz=64'><div class='label'>楽天競馬：地方競馬全場のオッズ・予想・投票・レース映像を提供</div></a>
+<a class='tile' target='_blank' href='https://race.sp.netkeiba.com/?rf=navi'><img src='https://www.google.com/s2/favicons?domain=race.sp.netkeiba.com&sz=64'><div class='label'>netkeiba</div></a>
+<a class='tile' target='_blank' href='https://www.ipat.jra.go.jp/sp/'><img src='https://www.google.com/s2/favicons?domain=www.ipat.jra.go.jp&sz=64'><div class='label'>JRAネット投票</div></a>
+</div>
+<div class='grid'>
+<a class='tile' target='_blank' href='https://proton.me/ja/lumo'><img src='https://www.google.com/s2/favicons?domain=lumo.proton.me/&sz=64'><div class='label'>Lumo AI</div></a>
+<a class='tile' target='_blank' href='https://web.drive-chart.com/'><img src='https://www.google.com/s2/favicons?domain=web.drive-chart.com&sz=64'><div class='label'>DRIVE CHART</div></a>
+<a class='tile' target='_blank' href='https://taxigo.jp/crew_portal/top'><img src='https://www.google.com/s2/favicons?domain=taxigo.jp&sz=64'><div class='label'>GO乗務員ポータル</div></a>
+<a class='tile' target='_blank' href='https://mapfan.com/map/routes/search?c=35.681195934673795,139.7672311841094,12&s=std,pc,ja&p=none'><img src='https://www.google.com/s2/favicons?domain=mapfan.com&sz=64'><div class='label'>MapFan</div></a>
+<a class='tile' target='_blank' href='https://www.monex.co.jp/'><img src='https://www.google.com/s2/favicons?domain=www.monex.co.jp&sz=64'><div class='label'>マネックス証券</div></a>
+<a class='tile' target='_blank' href='https://gold.tanaka.co.jp/commodity/souba/d-gold.php'><img src='https://www.google.com/s2/favicons?domain=gold.tanaka.co.jp&sz=64'><div class='label'>田中貴金属 日次金価格推移</div></a>
+<a class='tile' target='_blank' href='https://app.theo.blue/account/login/plus/docomo'><img src='https://www.google.com/s2/favicons?domain=app.theo.blue&sz=64'><div class='label'>THEO+</div></a>
+<a class='tile' target='_blank' href='https://www.rakuten-bank.co.jp'><img src='https://www.google.com/s2/favicons?domain=www.rakuten-bank.co.jp&sz=64'><div class='label'>楽天銀行</div></a>
+<a class='tile' target='_blank' href='https://www.perplexity.ai/spaces'><img src='https://www.google.com/s2/favicons?domain=www.perplexity.ai&sz=64'><div class='label'>Perplexity/スペース</div></a>
+<a class='tile' target='_blank' href='https://github.com/'><img src='https://www.google.com/s2/favicons?domain=github.com&sz=64'><div class='label'>GitHub</div></a>
+<a class='tile' target='_blank' href='https://www.takarakuji-official.jp/mypage/?__ope=%E3%83%9E%E3%82%A4%E3%83%9A%E3%83%BC%E3%82%B8&__fromScreenId=SC_WMK_SP_002'><img src='https://www.google.com/s2/favicons?domain=www.takarakuji-official.jp&sz=64'><div class='label'>宝くじ公式サイト</div></a>
+<a class='tile' target='_blank' href='https://www.jrepoint.jp'><img src="https://www.jrepoint.jp/favicon.ico"><div class='label'>JRE POINT</div></a>
+<a class='tile' target='_blank' href='https://t.me/s/SamMods'><img src='https://www.google.com/s2/favicons?domain=t.me&sz=64'><div class='label'>YoutubePro Sam Mods / Tech</div></a>
+<a class='tile' target='_blank' href='https://www.youtubepro.app/?m=1'><img src='https://www.google.com/s2/favicons?domain=www.youtubepro.app&sz=64'><div class='label'>YoutubePro インストールページ</div></a>
+<a class='tile' target='_blank' href='https://tadaup.jp/'><img src='https://www.google.com/s2/favicons?domain=tadaup.jp&sz=64'><div class='label'>ただのうｐろだ | どこよりも使いやすいアップローダー</div></a>
+<a class='tile' target='_blank' href='https://www.facebook.com/groups/chofu123/'><img src='https://www.google.com/s2/favicons?domain=www.facebook.com&sz=64'><div class='label'>調布Facebook交流会</div></a>
+<a class='tile' target='_blank' href='https://www.docomo.ne.jp/support/inquiry/call_reservation/'><img src='https://www.google.com/s2/favicons?domain=www.docomo.ne.jp&sz=64'><div class='label'>インフォメーションセンターへのコール事前予約</div></a>
+<a class='tile' target='_blank' href='https://adguard.com/ja/adguard-temp-mail/overview.html?aid=34549'><img src='https://www.google.com/s2/favicons?domain=adguard.com&sz=64'><div class='label'>Adguard/無料・登録不要で使える捨てメアド（使い捨てメールアドレス）</div></a>
+<a class='tile' target='_blank' href='https://www.e-tax.nta.go.jp/'><img src='https://www.google.com/s2/favicons?domain=www.e-tax.nta.go.jp&sz=64'><div class='label'>e-Tax</div></a>
+
+
+
+<details class="folder">
+<summary>📁 uBlacklist</summary>
+<a class='tile' target='_blank' href='https://github.com/iorate/ublacklist'><img src='https://www.google.com/s2/favicons?domain=github.com&sz=64'><div class='label'>GitHub - iorate/ublacklist: Blocks specific sites from appearing in Google</div></a>
+<a class='tile' target='_blank' href='https://x.com/iorate'><img src='https://www.google.com/s2/favicons?domain=x.com&sz=64'><div class='label'>あいおーれーと（@iorate）さん / X</div></a>
+</details>
+
+
+
+
+  </div>
+
+
+
+<!-- ===== 追加用テンプレート =====
+
+■構文
+<a class='tile' target='_blank' href='〇〇サイトURL'><img src='https://www.google.com/s2/favicons?domain=〇〇サイトドメイン&sz=64'><div class='label'>〇〇サイト名</div></a>
+
+■関数
+="<a class='tile' target='_blank' href='"&B3&
+"'><img src='https://www.google.com/s2/favicons?domain="&
+LEFT(
+SUBSTITUTE(SUBSTITUTE(B3,"https://",""),"http://",""),
+FIND("/",SUBSTITUTE(SUBSTITUTE(B3,"https://",""),"http://","")&"/")-1
+)&
+"&sz=64'><div class='label'>"&A3&
+"</div></a>"
+
+===== 追加用テンプレートここまで ===== -->
+
+
+[Last-Modified] 15:45
