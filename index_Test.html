@@ -22,44 +22,15 @@ details.folder{
   padding:14px;
   min-height:110px;
 }
-<!--② 📁を中央配置-->
-details.folder summary{
-  list-style:none;
-  cursor:pointer;
-  text-align:center;
-  font-size:18px;
-  font-weight:bold;
-}
-<!--③ ▼を右端へ-->
-details.folder summary{
-  list-style:none;
-  position:relative;
-  padding-right:24px;
-}
-
-details.folder summary::-webkit-details-marker{
-  display:none;
-}
-
-details.folder summary::after{
-  content:"▶";
-  position:absolute;
-  right:0;
-}
-
-details.folder[open] summary::after{
-  content:"▼";
-}
 <!--④ ホバーで少し明るく-->
 .tile:hover,
 details.folder:hover{
     background:#2a2a2a;
 }
 <!--展開した中を整理-->
-details.folder a.tile{
+details.folder .tile{
     margin-top:8px;
 }
-
 
 </style></head><body>
 <div class="search"><input id="g" placeholder="Google検索"><button onclick="window.open('https://www.google.com/search?q='+encodeURIComponent(g.value),'_blank')">検索</button></div>
@@ -135,4 +106,4 @@ FIND("/",SUBSTITUTE(SUBSTITUTE(B3,"https://",""),"http://","")&"/")-1
 ===== 追加用テンプレートここまで ===== -->
 
 
-[Last-Modified] 15:02
+[Last-Modified] 15:09
