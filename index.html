@@ -1,4 +1,4 @@
-<!-- ===== 2026/08/21 footnote追加、ブラウザロゴ追加 =====-->
+<!-- ===== 2026/08/26 投資追加 =====-->
 
 <!DOCTYPE html><html lang="ja"><head><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -47,6 +47,7 @@ h2{margin:18px 0 10px}
 <a class='tile' target='_blank' href='https://pointi.jp/'><img src='https://www.google.com/s2/favicons?domain=pointi.jp&sz=64'><img class='browser-icon' src='icons-chrome.png'><div class='label'>ポイントインカム<br><span class='footnote'>＜貯める＞</span></div></a>
 <a class='tile' target='_blank' href='https://pointi.kantangame.com/easygame/event'><img src='https://www.google.com/s2/favicons?domain=pointi.kantangame.com&sz=64'><img class='browser-icon' src='icons-chrome.png'><div class='label'>ゲームミッション<br><span class='footnote'>＜貯める＞</span></div></a>
 <a class='tile' target='_blank' href='https://pointmall.rakuten.co.jp/'><img src='https://www.google.com/s2/favicons?domain=pointmall.rakuten.co.jp&sz=64'><img class='browser-icon' src='icons-chrome.png'><div class='label'>楽天ポイントモール<br><span class='footnote'>＜貯める＞</span></div></a>
+<a class='tile' target='_blank' href='https://pointcard.rakuten.co.jp/'><img src='https://www.google.com/s2/favicons?domain=pointcard.rakuten.co.jp&sz=64'><img class='browser-icon' src='icons-chrome.png'><div class='label'>楽天ポイントカード<br><span class='footnote'>＜キャンペーンエントリー＞</span></div></a>
 </details>
 
 <a class='tile' target='_blank' href='https://pointmall.dcard.docomo.ne.jp/introduction/'><img src='https://www.google.com/s2/favicons?domain=pointmall.dcard.docomo.ne.jp&sz=64'><img class='browser-icon' src='icons-chrome.png'><div class='label'>dCARDポイントモール<br><span class='footnote'>＜ショッピング経由する＞</span></div></a>
@@ -97,6 +98,12 @@ h2{margin:18px 0 10px}
 <a class='tile' target='_blank' href='https://mapfan.com/map/routes/search?c=35.681195934673795,139.7672311841094,12&s=std,pc,ja&p=none'><img src='https://www.google.com/s2/favicons?domain=mapfan.com&sz=64'><div class='label'>MapFan</div></a>
 
 <a class='tile' target='_blank' href='https://www.google.com/maps/d/edit?mid=1Jh1h4dpdJubQhHZJRhVmviBJxQF-IQo&ll=35.66238610403097%2C139.66971279999999&z=12'><img src='https://www.google.com/s2/favicons?domain=https://maps.google.com&sz=64'><div class='label'>Googleマイマップ編集</div></a>
+
+<details class="folder">
+<summary>💹投資</summary>
+<a class='tile' target='_blank' href='https://finance.yahoo.co.jp/stocks'><img src='https://www.google.com/s2/favicons?domain=finance.yahoo.co.jp&sz=64'><div class='label'>Yahoo!ファイナンス</div></a>
+<a class='tile' target='_blank' href='https://minkabu.jp/'><img src='https://www.google.com/s2/favicons?domain=minkabu.jp&sz=64'><div class='label'>みんかぶ</div></a>
+</details>
 
 <a class='tile' target='_blank' href='https://www.monex.co.jp/'><img src='https://www.google.com/s2/favicons?domain=www.monex.co.jp&sz=64'><div class='label'>マネックス証券</div></a>
 
@@ -159,11 +166,13 @@ h2{margin:18px 0 10px}
 ■関数
 ="<a class='tile' target='_blank' href='"&B8&"'><img src='https://www.google.com/s2/favicons?domain="&
 LEFT(SUBSTITUTE(SUBSTITUTE(B8,"https://",""),"http://",""),FIND("/",SUBSTITUTE(SUBSTITUTE(B8,"https://",""),"http://","")&"/")-1)&
-"&sz=64'><div class='label'>"&A8&
+"&sz=64'>"&
+IF(D8<>"","<img class='browser-icon' src='"&D8&"'>","")&
+"<div class='label'>"&A8&
 IF(C8<>"","<br><span class='footnote'>"&C8&"</span>","")&
 "</div></a>"
 
 ===== 追加用テンプレートここまで ===== -->
 
 
-[Last-Modified] 12:31
+[Last-Modified] 15:59
